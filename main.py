@@ -117,7 +117,7 @@ def aragon_dao_route(network, dao_id):
 @app.route('/', methods=['GET'])
 def api_documentation():
     documentation = """
-    <h1>Flask API Documentation</h1>
+    <h1>Aragon DAO URI API Documentation</h1>
 
     <h2>1. Endpoint: /fetch_aragon_daos/&lt;network&gt;</h2>
     <p><strong>Description:</strong> Fetches a list of DAOs from the specified Aragon network.</p>
