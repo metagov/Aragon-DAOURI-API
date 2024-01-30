@@ -55,7 +55,9 @@ def fetch_aragon_daos(network):
             "membersURI": f"https://app.aragon.org/#/daos/{network}/{dao['id']}/community",
             "proposalsURI": f"https://app.aragon.org/#/daos/{network}/{dao['id']}/governance",
             "activityLogURI": f"https://app.aragon.org/#/daos/{network}/{dao['id']}/dashboard",
-            "contractsRegistryURI": f"https://app.aragon.org/#/daos/{network}/{dao['id']}/settings"
+            "contractsRegistryURI": f"https://app.aragon.org/#/daos/{network}/{dao['id']}/settings",
+            "governanceURI": f"https://app.aragon.org/#/daos/{network}/{dao['id']}/governance",
+            "issuersURI": f"https://aragon.org/",
         }
         formatted_daos.append(formatted_dao)
 
@@ -105,7 +107,9 @@ def aragon_dao(network, dao_id):
         "membersURI": f"https://app.aragon.org/#/daos/{network}/{dao_id}/community",
         "proposalsURI": f"https://app.aragon.org/#/daos/{network}/{dao_id}/governance",
         "activityLogURI": f"https://app.aragon.org/#/daos/{network}/{dao_id}/dashboard",
-        "contractsRegistryURI": f"https://app.aragon.org/#/daos/{network}/{dao_id}/settings"
+        "contractsRegistryURI": f"https://app.aragon.org/#/daos/{network}/{dao_id}/settings",
+        "governanceURI": f"https://app.aragon.org/#/daos/{network}/{dao_id}/governance",
+        "issuersURI": f"https://aragon.org/",
     }
 
     return jsonify(formatted_dao)
