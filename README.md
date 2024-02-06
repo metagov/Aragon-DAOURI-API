@@ -31,3 +31,9 @@
 
 - network: The network the DAO is on. Refer to the list of available networks above.
 - dao_id: The unique identifier of the DAO. This is a part of the URL path. Ex: 0x02bbc496bebc9a06c239670cea663c43cead899f
+
+## Build Instructions
+
+###### pip install -r requirements.txt
+
+###### python3 main.py
